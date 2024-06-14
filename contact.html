@@ -4,65 +4,82 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <style>
-        h1{
-            color: white;
-            font-family: "press Start 2P";
-            font-size: 40px;
-            border-style: double;
-            border-width: 10px;
-            padding: 12px;
-            border-color: goldenrod;
-            text-align: center;
-        }
-        body{
-            background-color: rgb(61, 19, 19);
-        }
-
-        p{
-            background-color: rgb(158, 38, 38,0.5);
-            color: white;
-            font-family: "Garamond", "sans-serif";
-            font-size: 20px;
-            border-style: groove;
-            border-width: 2px;
-            border-color: gold;
-            padding: 10px;
-        }
-        .container {
-            display: flex;
-            justify-content: center;
-        }
-
-        button{
-            width: 600px;
-            height: 80px;
-            font-size: larger;
-            background-color: rgba(1, 129, 1, 0.617);
-            border-width: 4px;
-            border-color: gold;
-            text-align: center;
-            color: gold;
-        }
-        
-    </style>
-
-    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&family=Tiny5&display=swap" rel="stylesheet">
 </head>
-<body>
-    <h1>Detta är ett Alexander Larsnäs Fanpage</h1>
+<body style="background-color: rgb(198, 216, 221);">
+    <h1>Vänligen fyll i dina personuppgifter</h1>
     <hr>
-    <p>
-        Alexander Larsnäs är en exceptionell person vars enastående intellekt och framgångar inom teknisk fysik har gjort honom till en respekterad figur inom sitt fält. Med högsta betyg i allt han har tagit sig an, både under sin utbildning och i sitt yrkesliv, står Alexander ut som en lysande stjärna. Hans passion för fysik sträcker sig långt bortom klassrummet och laboratoriet; han har en djupgående förståelse och fascination för universums mest komplexa mysterier. Alexanders briljans kompletteras av hans imponerande utseende, vilket gör honom till en person som både inspirerar och beundras av alla runt omkring honom.</p>
+    <form method="POST">
+        <div>
+            <label for="fname">First name:</label>
+            <input type="text" id="fname" name="fname" placeholder="Svampbob" required>
+        </div>
+        <br>
+        <div>
+            <label for="lname">Last name:</label>
+            <input type="text" id="lname" name="lname" placeholder="Fyrkant" required>
+        </div> 
+        <br>
+        <div>
+            <label for="pass">Lösenord:</label>
+            <input type="password" id="pass" name="pass" maxlength="12" required>
+        </div> 
+        <br>
+        <div>
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" placeholder="svampbob.fyrkant@gmail.com">
+        </div> 
+        <br>
 
-    <p>Utöver sin djupa kunskap inom fysik har Alexander också ett brinnande intresse för historia. Han fördjupar sig gärna i historiska texter och dokument, utforskar forntida civilisationers hemligheter och drar paralleller mellan det förflutna och nutiden. Denna kombination av teknisk expertis och historisk insikt gör honom till en unik och mångsidig individ. Alexanders intellektuella skärpa och oöverträffade skönhet gör att han ofta får höra att han är en levande renässansmänniska, en person vars talanger och attraktionskraft sträcker sig över flera discipliner och generationer. </p>
+        <div>
+            <label for="phone">Mobilnummer:</label>
+            <input type="tel" id="phone" name="phone" placeholder="123-456 78 90">
+        </div> 
+        <br>
 
-    <p>Alexander Larsnäs är inte bara en briljant civilingenjör och en passionerad historiker, han är också en person vars estetiska framtoning är omöjlig att förbise. Hans skönhet är lika slående som hans intellekt, och hans närvaro lämnar ett bestående intryck på alla han möter. Med sitt charmiga leende och sin självsäkra utstrålning kombinerar han yttre elegans med inre briljans på ett sätt som få andra kan matcha. Alexander är en verklig inspiration, en person vars liv och karriär fortsätter att sätta standarden för vad som är möjligt att uppnå med både skönhet och hjärna.</p>
+        <div>
+            <label for="bdate">Födelsedag:</label>
+            <input type="date" id="bdate" name="bdate">
+        </div> 
+        <br>
 
-    <div class="container">
-        <a title="DO IT">
-            <button>Klicka här för att donera hela din förmögenhet till Alexander (går oavkortat till hans njutning och bekvämlighet)</button>   
-        </a>
-    </div>
+        <div>
+            <label for="quantity">Antal:</label>
+            <input type="number" id="quantity" name="quantity" min="0" max="9999">
+        </div> 
+        <br>
+
+        <div>
+            <label for="Mr.">Mr.</label>
+            <input type="radio" name="title" id="Mr." value="Mr.">
+
+            <label for="Mrs.">Mrs.</label>
+            <input type="radio" name="title" id="Mrs." value="Mrs.">
+
+            <label for="Dr">Dr.</label>
+            <input type="radio" name="title" id="Dr." value="Dr.">
+        </div>
+        <br>
+        <div>
+            <label for="payment">Betalning:</label>
+            <select id="payment" name="payment">
+                <option value="visa">Visa</option>
+                <option value="mastercard">Mastercard</option>
+                <option value="giftcard">Presentkort</option>
+            </select>
+
+
+        </div>
+
+        <br>
+        <div>
+            <input type="reset">
+        </div>
+        <br>
+        <div>
+            <input type="submit">
+        </div>
+
+    </form>
+
 </body>
 </html>
