@@ -4,24 +4,74 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400..900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&display=swap" rel="stylesheet">
+    <style>
+        body{
+            background-color: rgb(61, 19, 19);
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+
+        }
+        h1{
+            color: white;
+            font-size: 40px;
+            border-style: double;
+            border-width: 10px;
+            padding: 12px;
+            border-color: goldenrod;
+            text-align: center;
+            font-family: "cinzel";
+        }
+
+        label{
+            color: white;
+        }
+
+        form{
+            text-align: center;
+            border-style: double;
+            border-color: gold;
+            padding: 30px;
+            font-family: "cinzel";
+    
+        }
+
+        .tab-container {
+            width: 100%;
+            max-width: 600px;
+            margin: 0 auto;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            overflow: hidden;
+        }
+
+
+    </style>
 </head>
-<body style="background-color: rgb(198, 216, 221);">
+<body>
     <h1>Vänligen fyll i dina personuppgifter</h1>
-    <hr>
+    <hr color="gold">
     <form method="POST">
         <div>
-            <label for="fname">First name:</label>
+            <label for="Mr.">Man</label>
+            <input type="radio" name="title" id="Mr." value="Mr.">
+
+            <label for="Mrs.">Kvinna (mhu)</label>
+            <input type="radio" name="title" id="Mrs." value="Mrs.">
+
+            <label for="Dr">Ickebinär</label>
+            <input type="radio" name="title" id="Dr." value="Dr.">
+        </div>
+        <br>
+        <div>
+            <label for="fname">Förnamn:</label>
             <input type="text" id="fname" name="fname" placeholder="Svampbob" required>
         </div>
         <br>
         <div>
-            <label for="lname">Last name:</label>
+            <label for="lname">Efternamn:</label>
             <input type="text" id="lname" name="lname" placeholder="Fyrkant" required>
-        </div> 
-        <br>
-        <div>
-            <label for="pass">Lösenord:</label>
-            <input type="password" id="pass" name="pass" maxlength="12" required>
         </div> 
         <br>
         <div>
@@ -43,21 +93,9 @@
         <br>
 
         <div>
-            <label for="quantity">Antal:</label>
-            <input type="number" id="quantity" name="quantity" min="0" max="9999">
+            <label for="quantity">Belopp ($):</label>
+            <input type="number" id="quantity" name="quantity" min="10000" max="10000000000">
         </div> 
-        <br>
-
-        <div>
-            <label for="Mr.">Mr.</label>
-            <input type="radio" name="title" id="Mr." value="Mr.">
-
-            <label for="Mrs.">Mrs.</label>
-            <input type="radio" name="title" id="Mrs." value="Mrs.">
-
-            <label for="Dr">Dr.</label>
-            <input type="radio" name="title" id="Dr." value="Dr.">
-        </div>
         <br>
         <div>
             <label for="payment">Betalning:</label>
@@ -66,10 +104,17 @@
                 <option value="mastercard">Mastercard</option>
                 <option value="giftcard">Presentkort</option>
             </select>
-
-
         </div>
-
+        <br>
+        <div>
+            <label for="kort">Kortnummer:</label>
+            <input type="text" id="kort" name="kort" placeholder="0123 4567 8910 1112">
+        </div> 
+        <br>
+        <div>
+            <label for="tid">Utgångsdatum:</label>
+            <input type="text" id="tid" name="tid" placeholder="01/24">
+        </div> 
         <br>
         <div>
             <input type="reset">
