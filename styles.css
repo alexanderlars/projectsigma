@@ -7,7 +7,7 @@ body{
 h1{
     color: white;
     font-family: "press Start 2P";
-    font-size: 45px;
+    font-size: 40px;
     border-left-style: double;
     border-right-style: double;
     border-left-width: 10px;
@@ -26,7 +26,7 @@ p{
     border-width: 2px;
     border-radius: 5px;
     border-color: gold;
-    padding: 10px;
+    padding: 16px;
 }
 
 #p2{
