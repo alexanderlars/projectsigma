@@ -17,6 +17,10 @@ h1{
     text-align: center;
 }
 
+h1:hover{
+    text-shadow: 0px 0px 5px yellow, 0px -5px 5px red;
+}
+
 p{
     background-color: brown;
     color: white;
